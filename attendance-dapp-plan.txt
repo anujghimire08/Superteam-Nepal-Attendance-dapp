@@ -1,0 +1,8 @@
+# Attendance dApp Plan 
+
+#Goal
+Build a simple dApp where teachers can mark attendance and students can view their attendance records, stored securely on Solana blockchain.
+
+
+** DAY - 01 (Feb 06, 2026) **
+1. Creating UI & learning solana (adding learned things in learn folder)
