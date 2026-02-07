@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himalaya Darshan College Attendance dApp</title>
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="icon" href="assets/images/icon.png" sizes="16x16" />
   </head>
   <body>
@@ -15,13 +15,14 @@
       </div>
       <div class="body">
         <p>Connect your wallet to continue</p>
-        <button>Connect Wallet</button>
-        <p>Wallet: 3k5M...sR6Aq</p>
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <p>Wallet Connected: <span id="walletAddress">none</span></p>
       </div>
       <div class="footer">
         <button class="footer-btn" id="teacher-btn">Teacher</button>
         <button class="footer-btn" id="student-btn">Student</button>
       </div>
     </div>
+    <script src="/JS/script.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@ body {
   background-color: var(--bg-dry-color);
 }
 .container {
-  width: 400px;
+  width: 500px;
   background-color: var(--bg-active-color);
   padding: var(--padding-lg);
   border-radius: var(--border-radius-xl);
@@ -43,7 +43,7 @@ body {
   gap: var(--gutter-md);
 }
 .body p {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
 }
 .body button {
   background-color: var(--bg-safe-color);
@@ -54,6 +54,9 @@ body {
   font-weight: bold;
   position: relative;
   overflow: hidden;
+}
+#walletAddress {
+  font-weight: bold;
 }
 .body button::before {
   content: "";

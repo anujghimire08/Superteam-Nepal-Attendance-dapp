@@ -95,7 +95,7 @@ h5 {
   border-bottom: 1.5px solid var(--text-secondary-color);
   padding: var(--padding-sm);
 }
-.attendance-info {
+.attendance-list {
   width: 100%;
   display: flex;
   flex-direction: column;

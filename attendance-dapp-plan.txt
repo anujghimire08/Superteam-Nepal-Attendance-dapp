@@ -6,3 +6,13 @@ Build a simple dApp where teachers can mark attendance and students can view the
 
 ** DAY - 01 (Feb 06, 2026) **
 1. Creating UI & learning solana (adding learned things in learn folder)
+
+** DAY - 02 (Feb 07, 2026) **
+1. Implement Phantom connection using solana DOCS
+2. Add functionality of localStorage to store student attendance information/ records
+3. learn about solana course topics:
+ # Overview
+ # Solana History
+ # Solana Account Model( solana vs ethereum)
+ # practice few on Solana Play(https://beta.solpg.io/)
+

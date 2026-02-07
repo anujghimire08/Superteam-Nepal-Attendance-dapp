@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himalaya Darshan College Attendance dApp</title>
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="stylesheet" href="teacher.css" />
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <link rel="stylesheet" href="/CSS/teacher.css" />
     <link rel="icon" href="assets/images/icon.png" sizes="16x16" />
   </head>
   <body>
@@ -15,15 +15,19 @@
       </div>
       <div class="body">
         <p>Mark attendance for your class</p>
-        <input type="text" placeholder="Student Wallet Address" />
-        <select id="select-option">
+        <input
+          type="text"
+          placeholder="Student Wallet Address"
+          id="wallet-address"
+        />
+        <select id="attendance-option">
           <option value="Present" selected>Present</option>
           <option value="Absent">Absent</option>
         </select>
-        <button>Mark Attendance</button>
+        <button id="mark-attendance-btn">Mark Attendance</button>
       </div>
       <h5>Attendance Records</h5>
-      <div class="attendance-info">
+      <div class="attendance-list">
         <p>ABC123 : Present</p>
         <p>XYZ456 : Absent</p>
       </div>
@@ -31,5 +35,6 @@
         <button class="footer-btn">Back to Home</button>
       </div>
     </div>
+    <script type="module" src="/JS/teacher.js"></script>
   </body>
 </html>
