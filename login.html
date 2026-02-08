@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalaya Darshan College Attendance dApp</title>
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <link rel="icon" href="assets/images/icon.png" sizes="16x16" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Warm Welcome!</h2>
+      <em>Enter your name and role</em>
+      <form method="post">
+        <input
+          type="text"
+          name="userName"
+          id="user-name"
+          placeholder="username"
+          required
+        />
+
+        <input type="radio" name="role" value="teacher" id="teacher" required />
+        <label for="teacher">Teacher</label>
+        <input type="radio" name="role" value="student" id="student" required />
+        <label for="student">Student</label>
+
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+    <script src="/JS/login.js"></script>
+  </body>
+</html>

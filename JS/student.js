@@ -15,15 +15,14 @@ function displayAttendance() {
       td.textContent = val;
       tr.appendChild(td);
     });
-
     space.appendChild(tr);
   });
-
   tbody.appendChild(space);
 }
 
 displayAttendance();
 
+
 backHomeEL.addEventListener("click", () => {
-  window.location = "index.html";
+  window.location = "home.html";
 });

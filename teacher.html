@@ -15,26 +15,26 @@
       </div>
       <div class="body">
         <p>Mark attendance for your class</p>
-        <input
-          type="text"
-          placeholder="Student Wallet Address"
-          id="wallet-address"
-        />
-        <select id="attendance-option">
-          <option value="Present" selected>Present</option>
-          <option value="Absent">Absent</option>
+        <select id="student-list">
+          <option selected disabled>Select Student</option>
         </select>
+
+        <input type="radio" name="status" id="present" value="Present" />
+        <label for="present">Present</label>
+        <input type="radio" name="status" id="absent" value="Absent" />
+        <label for="absent">Absent</label>
+
         <button id="mark-attendance-btn">Mark Attendance</button>
       </div>
       <h5>Attendance Records</h5>
       <div class="attendance-list">
-        <p>ABC123 : Present</p>
-        <p>XYZ456 : Absent</p>
+        <p>ABC123 | Present</p>
+        <p>XYZ456 | Absent</p>
       </div>
       <div class="footer">
         <button class="footer-btn">Back to Home</button>
       </div>
     </div>
-    <script type="module" src="/JS/teacher.js"></script>
+    <script src="/JS/teacher.js"></script>
   </body>
 </html>

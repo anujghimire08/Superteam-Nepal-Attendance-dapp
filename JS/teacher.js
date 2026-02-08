@@ -1,12 +1,49 @@
-let attendanceInfo = JSON.parse(localStorage.getItem("attendance")) || [];
-
-const studentNameEL = document.querySelector("#wallet-address");
-const attendanceOptionsEL = document.querySelector("#attendance-option");
-const markAttendanceBtnEL = document.querySelector("#mark-attendance-btn");
 const backHomeEL = document.querySelector(".footer-btn");
 const attendanceList = document.querySelector(".attendance-list");
+const studentList = document.getElementById("student-list");
+const markAttendanceBtnEL = document.getElementById("mark-attendance-btn");
 
-function markAttendance(name, status) {
+let attendanceInfo = JSON.parse(localStorage.getItem("attendance")) || [];
+
+const defaultStds = [
+  "Sushil Shrestha",
+  "Priya Sharma",
+  "Ramesh Karki",
+  "Anuj Ghimire",
+  "Anju Khadka",
+  "Sabita Bhattarai",
+  "Dipesh Gurung",
+  "Sunita Basnet",
+  "Binod Tamang",
+  "Pooja Gurung",
+  "Anil Thapa",
+];
+
+let raw = localStorage.getItem("students");
+let studentLists = raw ? JSON.parse(raw) : defaultStds;
+
+studentLists.sort();
+// const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+// let sortedStudents = [];
+// alphabet.forEach((letter) => {
+//   const filteredList = RandomStudentsList.filter((name) =>
+//     name.toUpperCase().startsWith(letter),
+//   );
+//   sortedStudents = [...sortedStudents, ...filteredList];
+// });
+
+localStorage.setItem("students", JSON.stringify(studentLists));
+
+const space = document.createDocumentFragment();
+studentLists.forEach((student) => {
+  const option = document.createElement("option");
+  option.value = student;
+  option.textContent = student;
+  space.appendChild(option);
+});
+studentList.appendChild(space);
+
+function markAttendance(name, wallet, status) {
   if (!name) {
     alert("Please enter student name");
     return;
@@ -14,6 +51,7 @@ function markAttendance(name, status) {
 
   attendanceInfo.push({
     name: name,
+    wallet: wallet,
     date: new Date().toLocaleDateString(),
     status: status,
   });
@@ -23,10 +61,10 @@ function markAttendance(name, status) {
 }
 
 markAttendanceBtnEL.addEventListener("click", () => {
-  const name = studentNameEL.value;
-  const status = attendanceOptionsEL.value;
-  markAttendance(name, status);
-  studentNameEL.value = "";
+  const name = studentList.value;
+  const status = document.querySelector(`input[name="status"]:checked`).value;
+
+  markAttendance(name, localStorage.getItem("wallet"), status);
 });
 
 function displayAttendance() {
@@ -35,15 +73,14 @@ function displayAttendance() {
 
   attendanceInfo.forEach((info) => {
     const p = document.createElement("p");
-    p.textContent = `${info.name} | ${info.date} | ${info.status}`;
+    p.textContent = `${info.name} | ${info.status} | ${info.date}`;
     space.appendChild(p);
   });
-
   attendanceList.appendChild(space);
 }
 
 displayAttendance();
 
 backHomeEL.addEventListener("click", () => {
-  window.location = "index.html";
+  window.location = "home.html";
 });

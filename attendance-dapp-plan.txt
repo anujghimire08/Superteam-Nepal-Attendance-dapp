@@ -16,3 +16,9 @@ Build a simple dApp where teachers can mark attendance and students can view the
  # Solana Account Model( solana vs ethereum)
  # practice few on Solana Play(https://beta.solpg.io/)
 
+** DAY - 03 (Feb 08, 2026) **
+1. added user login section 
+2. based up on user login user can access thier role section dashboard
+3. used base case for each conditions 
+4. phantom connection is mandatory for step no.2 (connection id address can be check uncommeting comments )
+5. added dropdown system for teacher to ensure efficient and quick attendance marking
