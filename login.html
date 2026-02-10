@@ -10,8 +10,9 @@
   </head>
   <body>
     <div class="container">
-      <h2>Warm Welcome!</h2>
-      <em>Enter your name and role</em>
+      <h1>Welcome!</h1>
+      <h1>Attendance dApp</h1>
+      <p>Enter your Name and Role</p>
       <form method="post">
         <input
           type="text"
@@ -21,10 +22,28 @@
           required
         />
 
-        <input type="radio" name="role" value="teacher" id="teacher" required />
-        <label for="teacher">Teacher</label>
-        <input type="radio" name="role" value="student" id="student" required />
-        <label for="student">Student</label>
+        <div class="inputs-btn">
+          <div class="role">
+            <input
+              type="radio"
+              name="role"
+              value="teacher"
+              id="teacher"
+              required
+            />
+            <label for="teacher">Teacher</label>
+          </div>
+          <div class="role">
+            <input
+              type="radio"
+              name="role"
+              value="student"
+              id="student"
+              required
+            />
+            <label for="student">Student</label>
+          </div>
+        </div>
 
         <button type="submit">Continue</button>
       </form>
