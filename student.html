@@ -7,8 +7,71 @@
     <link rel="stylesheet" href="/CSS/theme.css" />
     <link rel="stylesheet" href="/CSS/student.css" />
     <link rel="icon" href="assets/images/icon.png" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
   <body>
+    <nav>
+      <div class="profile">
+        <a href="#"> <img src="/assets/images/user.png" alt="userlogo" /></a>
+        <h3>Anuj Ghimire</h3>
+      </div>
+      <div class="mainmenu">
+        <h3>Main Menu</h3>
+        <div class="Micon">
+          <a href="#">
+            <span class="material-symbols-outlined menuicon">dashboard</span>
+            <span class="iconactionname">Dashboard</span></a
+          >
+        </div>
+        <div class="Micon">
+          <a href="#"
+            ><span class="material-symbols-outlined"> event_note </span>
+            <span class="iconactionname">Events</span></a
+          >
+        </div>
+        <div class="Micon">
+          <a href="#"
+            ><span class="material-symbols-outlined"> book_3 </span>
+            <span class="iconactionname">Notes</span></a
+          >
+        </div>
+      </div>
+      <div class="general">
+        <h3>General</h3>
+        <div class="Micon">
+          <a href="#">
+            <span class="material-symbols-outlined menuicon">folder</span>
+            <span class="iconactionname">Projects</span></a
+          >
+        </div>
+        <div class="Micon">
+          <a href="#">
+            <span class="material-symbols-outlined menuicon">diversity_3</span>
+            <span class="iconactionname">Teams</span></a
+          >
+        </div>
+      </div>
+      <div class="account">
+        <h3>Account</h3>
+        <div class="Micon">
+          <a href="#">
+            <span class="material-symbols-outlined menuicon"
+              >account_circle</span
+            >
+            <span class="iconactionname">My Account</span></a
+          >
+        </div>
+        <div class="Micon">
+          <a href="#">
+            <span class="material-symbols-outlined menuicon">logout</span>
+            <span class="iconactionname">Logout</span></a
+          >
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="header">
         <h2>Student Dashboard</h2>
@@ -19,23 +82,20 @@
           <table frame="box" rules="all">
             <thead>
               <tr>
-                <th>Wallet Address</th>
+                <th>Name</th>
                 <th>Date</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody id="tbody"></tbody>
           </table>
-          <!-- <p class="list-attendance">ABC123 : Present</p>
-          <p class="list-attendance">XYZ456 : Absent</p> -->
         </div>
       </div>
       <div class="footer">
         <button class="footer-btn">Back to Home</button>
       </div>
     </div>
-    <script src="/JS/student.js"></script>
     <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
-    <script src="https://unpkg.com/@coral-xyz/anchor@latest/dist/esm/index.js"></script>
+    <script src="/JS/student.js"></script>
   </body>
 </html>

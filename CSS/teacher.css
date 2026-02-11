@@ -14,10 +14,72 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-dry-color);
+  background-color: rgb(255, 237, 238);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(59, 130, 246);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  border-radius: 0px 15px 15px 0px;
+  padding: 20px;
+  color: white;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 50px;
+}
+
+.mainmenu h3,
+.general h3,
+.account h3 {
+  padding-bottom: 15px;
+}
+
+.Micon {
+  margin-bottom: 10px;
+}
+
+.Micon a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.Micon a:hover {
+  background-color: rgb(210, 9, 19);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menuicon {
+  font-size: 22px;
+}
+
+.iconactionname {
+  font-size: 22px;
+  font-weight: 700;
 }
 .container {
-  width: 400px;
+  width: 800px;
+  margin-left: 17rem;
   background-color: var(--bg-active-color);
   padding: var(--padding-lg) var(--padding-lg) 0 var(--padding-lg);
   border-radius: var(--border-radius-xl);
@@ -61,6 +123,20 @@ body {
   border-radius: var(--border-radius-lg);
   outline: none;
   cursor: pointer;
+}
+.role-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.role-option .role {
+  display: flex;
+  gap: 0.4rem;
+}
+.role-option .role input {
+  transform: scale(1.3);
 }
 .body button {
   background-color: var(--bg-safe-color);
