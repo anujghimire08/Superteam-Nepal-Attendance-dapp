@@ -1,4 +1,4 @@
-# SOLROL Attendance dApp
+# SOLROLL Attendance dApp
 
 [![Developer](https://img.shields.io/badge/Developer-Anuj%20Ghimire-blue)](http://anujghimire.com.np)
 [![Blockchain](https://img.shields.io/badge/Blockchain-Solana-green)]()
@@ -7,7 +7,7 @@
 
 ## Project Overview 🚀
 
-**SOLROL Attendance dApp** was built as part of the **Superteam Nepal University Tour mini-hack.**
+**SOLROLL Attendance dApp** was built as part of the **Superteam Nepal University Tour mini-hack.**
 
 The goal was to **create a beginner-friendly but fully functional Solana dApp** where teachers can mark attendance and students can view verified records.
 
@@ -51,7 +51,7 @@ Watch the project in action:
 ## Live Project 🌐
 
 Access the live dApp here:  
-[**SOLROL Attendance dApp Live Demo**](https://superteam-nepal-attendance-dapp.vercel.app/)
+[**SOLROLL Attendance dApp Live Demo**](https://superteam-nepal-attendance-dapp.vercel.app/)
 
 ---
 
