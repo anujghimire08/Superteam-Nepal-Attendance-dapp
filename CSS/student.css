@@ -1,9 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+NZ+Basic:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family:
+    "Assistant",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
 }
 body,
 html {
@@ -14,77 +23,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-dry-color);
+  background-color: rgb(255, 237, 238);
 }
-nav {
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 95%;
+  height: auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgb(59, 130, 246);
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  border-radius: 0px 15px 15px 0px;
-  padding: 20px;
 }
-
-.profile {
+.container nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 1.5rem;
+  color: rgb(18, 93, 214);
 }
 
-.profile img {
-  width: 50px;
-}
-
-.mainmenu h3,
-.general h3,
-.account h3 {
-  padding-bottom: 15px;
-}
-
-.Micon {
-  margin-bottom: 10px;
-}
-
-.Micon a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-}
-
-.Micon a:hover {
-  background-color: rgb(210, 9, 19);
-  border-radius: 5px;
+.container nav span {
+  font-size: 24px;
+  position: relative;
   cursor: pointer;
 }
 
-.menuicon {
-  font-size: 22px;
+#noti-num {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: rgb(210, 9, 19);
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
 }
 
-.iconactionname {
-  font-size: 22px;
-  font-weight: 700;
+.container nav img {
+  width: 40px;
+  cursor: pointer;
 }
-.container {
-  width: 400px;
-  background-color: var(--bg-active-color);
-  padding: var(--padding-lg) var(--padding-lg) 0 var(--padding-lg);
-  border-radius: var(--border-radius-xl);
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
-  gap: var(--gutter-lg);
-}
-.header,
-.body {
+.header {
   border-bottom: 1.5px solid var(--text-secondary-color);
   padding-bottom: var(--padding-sm);
   width: 100%;
@@ -97,7 +86,6 @@ nav {
 .body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: var(--gutter-md);
 }
@@ -107,9 +95,6 @@ nav {
 .body .list-attendance {
   border: 1px solid;
   padding: var(--padding-sm);
-}
-.footer {
-  margin-top: -1.5rem;
 }
 .footer-btn {
   padding: var(--padding-sm) var(--padding-md);
@@ -125,6 +110,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin: var(--margin-md) auto;
+  transition: 0.3s;
 }
 .footer-btn::before {
   content: "";
@@ -140,4 +126,13 @@ nav {
 }
 .footer-btn:active {
   transform: scale(0.98);
+}
+th {
+  background-color: rgb(59, 130, 246);
+}
+td,
+th {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
 }

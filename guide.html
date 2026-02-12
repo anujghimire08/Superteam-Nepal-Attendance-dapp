@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide - SOLROL Attendance dApp</title>
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <link rel="icon" href="assets/images/logo.png" sizes="16x16" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:
+          "Assistant",
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: rgb(252, 218, 218);
+        color: black;
+        line-height: 1.7;
+      }
+      .book-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+      }
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo img {
+        width: 180px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: rgb(18, 93, 214);
+      }
+      h2 {
+        margin-top: 30px;
+        color: rgb(210, 9, 19);
+      }
+      p,
+      li {
+        margin: 12px 0;
+        font-size: 1.1rem;
+      }
+      ul {
+        margin-left: 20px;
+      }
+      .back-btn {
+        display: block;
+        margin: 40px auto 0;
+        padding: 12px 25px;
+        background-color: rgb(18, 93, 214);
+        color: white;
+        border: none;
+        border-radius: 0.6rem;
+        font-size: 1rem;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+      }
+      .back-btn::before {
+        position: absolute;
+        content: "";
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(11, 65, 154);
+      }
+      .back-btn:hover {
+        background-color: rgb(11, 65, 154);
+      }
+      .back-btn:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-container">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="solrol app logo" />
+      </div>
+
+      <h1>SOLROL Attendance dApp Guide</h1>
+
+      <h2>Introduction</h2>
+      <p>
+        SOLROL Attendance dApp is a learning project created to understand
+        blockchain-based attendance management using Solana. It allows teachers
+        to mark attendance and students to view their records securely.
+      </p>
+
+      <h2>1. Login</h2>
+      <p>
+        Open the Login page, enter your name, and select your role (Teacher or
+        Student). Click <strong>Continue</strong> to proceed to the Home page.
+      </p>
+
+      <h2>2. Home Page</h2>
+      <ul>
+        <li>
+          Click <strong>Connect Wallet</strong> if you are a teacher to connect
+          your Phantom wallet.
+        </li>
+        <li>The wallet address will be displayed partially once connected.</li>
+        <li>
+          Your role button will become active. Click it to go to the Teacher or
+          Student Dashboard.
+        </li>
+      </ul>
+
+      <h2>3. Teacher Dashboard</h2>
+      <ul>
+        <li>Select a student from the dropdown list.</li>
+        <li>
+          Choose <strong>Present</strong> or <strong>Absent</strong> using the
+          radio buttons.
+        </li>
+        <li>Click <strong>Mark Attendance</strong> to save the record.</li>
+        <li>
+          The attendance is stored locally and a transaction is sent to Solana
+          Devnet (for learning purposes).
+        </li>
+        <li>All records appear in the attendance list at the bottom.</li>
+      </ul>
+
+      <h2>4. Student Dashboard</h2>
+      <ul>
+        <li>
+          View your attendance history in a table with Date, Transaction ID, and
+          Status.
+        </li>
+        <li>If no records exist yet, the table will show "No records yet".</li>
+        <li>Click <strong>Back to Home</strong> to return.</li>
+      </ul>
+
+      <h2>5. Notes & Learning Purpose</h2>
+      <ul>
+        <li>
+          This project is for
+          <strong>learning and educational purposes</strong>, not commercial
+          use.
+        </li>
+        <li>
+          Teachers must have Phantom Wallet installed to record attendance.
+        </li>
+        <li>
+          Solana Devnet is used to demonstrate blockchain transactions safely.
+        </li>
+      </ul>
+
+      <button class="back-btn" onclick="window.location = 'home.html'">
+        Back to Home
+      </button>
+    </div>
+  </body>
+</html>

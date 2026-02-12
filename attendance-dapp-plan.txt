@@ -22,3 +22,8 @@ Build a simple dApp where teachers can mark attendance and students can view the
 3. used base case for each conditions 
 4. phantom connection is mandatory for step no.2 (connection id address can be check uncommeting comments )
 5. added dropdown system for teacher to ensure efficient and quick attendance marking
+
+** DAY - 04,05,06,07 (Feb 12, 2026) **
+1. added local storage system to blockchain
+2. adding styling on ui/ux for user interface
+3. accessing of transaction address functionality 

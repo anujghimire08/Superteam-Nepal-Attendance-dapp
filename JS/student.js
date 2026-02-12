@@ -1,28 +1,29 @@
-let attendanceInfo = JSON.parse(localStorage.getItem("attendance")) || [];
+document.addEventListener("DOMContentLoaded", () => {
+  const tbody = document.getElementById("tbody");
+  const backHomeEL = document.querySelector(".footer-btn");
 
-const backHomeEL = document.querySelector(".footer-btn");
-const tbody = document.querySelector("#tbody");
+  const records = JSON.parse(localStorage.getItem("studentAttendance")) || [];
 
-function displayAttendance() {
   tbody.innerHTML = "";
-  const space = document.createDocumentFragment();
 
-  attendanceInfo.forEach((info) => {
-    const tr = document.createElement("tr");
-
-    Object.values(info).forEach((val) => {
-      const td = document.createElement("td");
-      td.textContent = val;
-      tr.appendChild(td);
+  if (!records.length) {
+    tbody.innerHTML = "<tr><td colspan='3'>No records yet</td></tr>";
+  } else {
+    records.forEach((r) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+       <td>${r.date}</td>
+        <td>${r.tx}</td>
+        <td>${r.status}</td>
+      `;
+      tbody.appendChild(tr);
     });
-    space.appendChild(tr);
+  }
+
+  backHomeEL.addEventListener("click", () => {
+    window.location = "home.html";
   });
-  tbody.appendChild(space);
-}
-
-displayAttendance();
-
-
-backHomeEL.addEventListener("click", () => {
-  window.location = "home.html";
 });
+
+document.getElementById("user").title =
+  JSON.parse(localStorage.getItem("userInfo")).name || "unknown";

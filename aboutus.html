@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - SOLROL Attendance dApp</title>
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <link rel="icon" href="assets/images/logo.png" sizes="16x16" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:
+          "Assistant",
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: rgb(252, 218, 218);
+        color: black;
+        line-height: 1.7;
+      }
+      .book-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+      }
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo img {
+        width: 180px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: rgb(18, 93, 214);
+      }
+      h2 {
+        margin-top: 30px;
+        color: rgb(210, 9, 19);
+      }
+      p {
+        margin: 15px 0;
+        font-size: 1.1rem;
+      }
+      .back-btn {
+        display: block;
+        margin: 40px auto 0;
+        padding: 12px 25px;
+        background-color: rgb(18, 93, 214);
+        color: white;
+        border: none;
+        border-radius: 0.6rem;
+        font-size: 1rem;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+      }
+      .back-btn::before {
+        position: absolute;
+        content: "";
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(11, 65, 154);
+      }
+      .back-btn:hover {
+        background-color: rgb(11, 65, 154);
+      }
+      .back-btn:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-container">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="solrol app logo" />
+      </div>
+
+      <h1>About SOLROL Attendance dApp</h1>
+
+      <h2>Overview</h2>
+      <p>
+        SOLROL Attendance dApp is designed to make attendance management simple
+        and transparent using blockchain technology. Teachers can mark
+        attendance on the Solana network, and students can verify their records
+        anytime.
+      </p>
+
+      <h2>Mission</h2>
+      <p>
+        Our mission is to provide educational institutions with a secure,
+        reliable, and modern attendance system that leverages decentralized
+        technologies.
+      </p>
+
+      <h2>Learning Purpose</h2>
+      <p>
+        This project was created as a learning exercise to understand how
+        blockchain, web development, and decentralized applications (dApps)
+        work. It demonstrates connecting a wallet, sending transactions, and
+        storing data on Solana while practicing frontend and JavaScript skills.
+      </p>
+
+      <h2>Team</h2>
+      <p>
+        Developed by the
+        <a href="http://anujghimire.com.np" target="_blank">Anuj Ghimire</a>,
+        along with a goal to combine innovation and usability to create
+        efficient digital solutions for education.
+      </p>
+
+      <button class="back-btn" onclick="window.location = 'home.html'">
+        Back to Home
+      </button>
+    </div>
+  </body>
+</html>
