@@ -1,7 +1,6 @@
 # SOLROLL Attendance dApp
 
 [![Developer](https://img.shields.io/badge/Developer-Anuj%20Ghimire-blue)](http://anujghimire.com.np)
-[![Blockchain](https://img.shields.io/badge/Blockchain-Solana-green)]()
 [![Bounty Winner](https://img.shields.io/badge/Superteam%20Nepal-Bounty%20Winner-ff69b4)]()
 
 ---
